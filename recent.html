@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent Analyses | Project Demand Analyzer</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body onload="loadRecentAnalyses()">
+    <header>
+        <h1>Project Demand Analyzer</h1>
+        <div>Recent Analyses</div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="materials.html">Materials DB</a></li>
+                <li class="active"><a href="recent.html">Recent Analyses</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="card">
+                <h2>Recent Project Analyses</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Total Value (GHS)</th>
+                            <th>Demand Score (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="recentTableBody"></tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        2025 Project Demand Analyzer | Recent Analyses
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
